@@ -1,0 +1,72 @@
+@font-face {
+    font-family: cocogoose;
+    src: url(../fonts/Cocogoose_trial.otf);
+}
+body {
+  position: relative;
+
+}
+.text-normal {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #272a31cc;
+}
+
+main {
+position: absolute;
+top: 0;
+width: 100%;
+  background-image: url(../images/mobile_intro_bg.png);
+  background-repeat: norepeat;
+  background-size: 100% 100%;
+}
+
+#intro-container {
+  width: 90%;
+  margin: 120px 0 5% 5%;
+}
+
+h1 {
+  color:#ec5242; 
+  font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+h1 div {
+  color: #ec5242;
+  font-family: cocogoose, sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+  
+}
+
+#intro-description {
+  border: solid 4px white;
+  padding: 20px;
+  background-color: rgba(249, 249, 250);
+  margin: 20px 0;
+}
+
+#intro-date {
+  margin-bottom: 40px;
+
+}
+
+#date {
+  font-family: cocogoose, sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #272a31;
+}
+
+
+
+
+@media only screen and (min-width: 768px){
+  main {
+  position: relative;
+  }
+
+}
