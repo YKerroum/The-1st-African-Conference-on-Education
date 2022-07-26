@@ -228,9 +228,9 @@ box-sizing: border-box;
  display:flex;
  flex-direction: column;
  row-gap: 60px;
- column-gap: 30px;
- width: 90%;
- margin: 0 5%;
+ column-gap: 20px;
+ width: 100%;
+ margin: 0 0;
  height: 100%;
 }
 
@@ -240,11 +240,12 @@ column-gap: 10px;
 width: 100%;
 }
 .speaker-image {
-width: 160px;
-height: 159px;
+
 flex: 0 0 auto;
-background-repeat: no-repeat;
-background-size: 100% 100%;
+}
+.speaker-image img {
+width: 150px;
+height: 149px;
 }
 
 .speaker-informations {
@@ -329,7 +330,8 @@ width: 100%;
     width: 50%;
   }
   #featured-speakers-list {
-  height: 600px;
+  box-sizing: border-box;
+  max-height: 750px;
   flex-wrap: wrap;
   }
 }

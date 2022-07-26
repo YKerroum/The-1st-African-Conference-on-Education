@@ -38,14 +38,26 @@ const speakersList = [
 ];
 
 const speakersContainer = document.querySelector('#featured-speakers-list');
-let speakersContent='';
 window.onload = () => {
 speakersList.forEach((speaker, index) => {
-    speakersContent+=`
-    
-    
-    
+    speakersContainer.innerHTML += `
+  <div class="speaker-container">
+                            <div class ="speaker-image">
+                                <img src="${speaker.image}" alt="${speaker.name} picture"/>
+                            </div>
+                            <div class="speaker-informations">
+                                    <div class="speaker-name">
+                                        <h3>${speaker.name}</h3>
+                                    </div>
+                                    <div class="speaker-status">
+                                        <p>${speaker.status}</p>
+                                    </div>
+                                    <div class="speaker-description">
+                                        <p>${speaker.description}</p>
+                                    </div>
+                            </div>
+    </div>
     `
 });
-
-}
+   
+};
