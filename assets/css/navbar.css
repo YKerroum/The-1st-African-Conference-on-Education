@@ -195,6 +195,7 @@ nav {
   }
   .navbar {
     display: flex;
+    column-gap: 10px;
   }
   .navbar .logo {
     display: block;
@@ -209,6 +210,7 @@ nav {
     display: block;
     align-self: center;
     margin-right: 10%;
+    flex: 1 1 auto;
   }
 
   .navbar .compaign button {
@@ -238,6 +240,7 @@ nav {
   text-align: center;
   }
   .nav-container {
+  flex: 0 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
