@@ -56,7 +56,7 @@ h1 {
   font-size: 1.5rem;
 }
 
-h1 span {
+.principal-title {
   color: #ec5242;
   font-family: cocogoose, sans-serif;
   font-weight: 400;
@@ -337,7 +337,7 @@ footer {
   }
 
   /* introduction section */
-  h1 span {
+  .principal-title {
     font-size: 3.5rem;
   }
 

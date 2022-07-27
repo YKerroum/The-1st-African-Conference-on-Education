@@ -15,7 +15,6 @@ nav {
   box-sizing: border-box;
 }
 
-
 .nav-container {
   width: 90%;
   margin: auto;
@@ -38,7 +37,6 @@ nav {
   font-size: 1rem;
   padding: 1rem;
 }
-
 
 .navbar .nav-container a:hover {
   color: #ec5242;
