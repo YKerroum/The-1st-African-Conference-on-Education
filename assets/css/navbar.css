@@ -7,8 +7,7 @@
 
 .navbar .logo,
 .navbar .compaign,
-#login-bar-container
-{
+#login-bar-container {
   display: none;
 }
 
@@ -39,7 +38,7 @@ nav {
   padding: 1rem;
 }
 
-.navbar .nav-container a:hover{
+.navbar .nav-container a:hover {
   color: #ec5242;
 }
 
@@ -56,16 +55,15 @@ nav {
 }
 
 .nav-container .hamburger-lines {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 26px;
   width: 32px;
   position: absolute;
   top: 17px;
   left: 20px;
   z-index: 3;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .nav-container .hamburger-lines .line {
@@ -114,7 +112,7 @@ nav {
   font-size: 1.5rem;
   font-weight: 500;
   width: 50%;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   border: solid 2px #272a31;
   background-color: rgba(255, 255, 255, 0.7);
 }
@@ -139,9 +137,7 @@ nav {
   transform: rotate(-45deg);
 }
 
-
-
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .nav-container .hamburger-lines .line,
   .nav-container .checkbox,
   .nav-container .hamburger-lines {
@@ -149,7 +145,7 @@ nav {
   }
 
   header {
-    display:flex;
+    display: flex;
     flex-direction: column;
     width: 100%;
   }
@@ -162,9 +158,9 @@ nav {
   }
 
   #login-bar {
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 23%;
     height: 30px;
     margin-right: 10%;
@@ -178,9 +174,9 @@ nav {
   }
 
   #language-select {
-    -moz-appearance:none;
+    -moz-appearance: none;
     -webkit-appearance: none;
-    appearance:none;
+    appearance: none;
     background-color: #272a31;
     border: none;
     color: white;
@@ -189,18 +185,22 @@ nav {
   #login {
     margin-right: 10%;
   }
+
   .head-links {
     text-decoration: none;
     color: white;
   }
+
   .navbar {
     display: flex;
     column-gap: 10px;
   }
+
   .navbar .logo {
     display: block;
     margin-left: 5%;
   }
+
   .navbar .logo img {
     width: 120px;
     height: 80px;
@@ -227,20 +227,21 @@ nav {
   }
 
   .navbar .menu-items {
-  position: relative;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding: 0px;
-  box-shadow: none;
-  background-color: white;
-  height: 100%;
-  width: 80%;
-  transform: none;
-  margin: 0px;
-  text-align: center;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+    box-shadow: none;
+    background-color: white;
+    height: 100%;
+    width: 80%;
+    transform: none;
+    margin: 0;
+    text-align: center;
   }
+
   .nav-container {
-  flex: 0 0 auto;
+    flex: 0 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -257,7 +258,6 @@ nav {
   .navbar .menu-items li {
     margin-bottom: 0;
     border: none;
-    background-color: none;
     width: auto;
   }
 }
