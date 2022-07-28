@@ -292,12 +292,11 @@ h2:hover::after {
 #more-button:focus {
   box-shadow: 0 0.5em 0.5em -0.4em #ec5242;
   transform: translateY(-0.25em);
-  
 }
 
 .fa-angle-down {
-color:#ec5242;
-margin-left: 5px;
+  color: #ec5242;
+  margin-left: 5px;
 }
 
 /* end of featured speakers section */

@@ -12,6 +12,10 @@
 - JavaScript
 - GITHUB Pages
 
+## Live Demo
+
+- You can see an example of use by visiting [this link.](https://www.loom.com/share/636f8a029734430d9b5bc0aad962eade)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
