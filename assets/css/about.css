@@ -1,0 +1,170 @@
+a.active {
+  color: #ec5242 !important;
+}
+
+#intro {
+  align-items: center;
+}
+
+#intro-container {
+  background: rgb(247, 247, 248) url("../images/about_bg_01.png") no-repeat scroll center center;
+  background-size: 100% 100%;
+}
+
+h1 {
+  width: inherit;
+  text-align: center;
+}
+
+.hidden-title {
+  display: block;
+}
+
+#intro-description {
+  background-color: white;
+  text-align: center;
+  line-height: 2;
+  border: solid 2px #d3d3d3;
+}
+
+#intro-date {
+  line-height: 2;
+  margin-top: 10px;
+  text-align: center;
+  width: 80%;
+}
+
+#email {
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#main-program {
+  background-color: white;
+  background-image: none;
+  border-top: solid 2px #d3d3d3;
+  border-bottom: solid 2px #d3d3d3;
+}
+
+#main-program-title {
+  color: #272a31;
+  text-align: center;
+  line-height: 2;
+  width: 70%;
+}
+
+#main-program-container p {
+  width: 90%;
+  text-align: center;
+}
+
+#main-program-logo {
+  text-align: center;
+  border: solid 1px #d3d3d3;
+  box-shadow: 2px 2px 5px #d3d3d3;
+}
+
+.cards img {
+  width: 100%;
+  height: 100%;
+}
+
+#main-program-logo img {
+  width: 60%;
+}
+
+#past-summit-message {
+  line-height: 1.5;
+  color: #272a31;
+  text-align: center;
+  width: 90%;
+}
+
+#summit-cards {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  position: relative;
+  width: 80%;
+  height: 100%;
+}
+
+.centered-title {
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0 0 0 1000px rgba(236, 82, 66, 0.5);
+}
+
+.centered-title-content {
+  vertical-align: middle;
+  padding-top: 25%;
+}
+
+.centered-title-content .summit-year {
+  font-weight: 600;
+  font-size: 2em;
+}
+
+#partners {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  a.active {
+    color: #ec5242 !important;
+  }
+
+  #intro {
+    width: 70% !important;
+    margin: 0 auto !important;
+  }
+
+  h1 {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #featured-speakers-container {
+    margin-bottom: 5%;
+  }
+
+  .hidden-title {
+    display: none;
+  }
+
+  #summit-cards {
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: stretch;
+  }
+
+  .cards {
+    height: 288px;
+  }
+
+  #partners {
+    display: none;
+  }
+
+  footer {
+    background-color: #272a31;
+  }
+
+  #footer-container {
+    color: #d3d3d3;
+  }
+}
