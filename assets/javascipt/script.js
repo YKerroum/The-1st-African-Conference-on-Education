@@ -36,10 +36,20 @@ const speakersList = [
     description: 'Ryan had been leading open-source projects.',
   },
 ];
-
 const speakersContainer = document.querySelector('#featured-speakers-list');
-window.onload = () => {
-  speakersList.forEach((speaker) => {
+const partners = document.querySelector('#partners');
+const footer = document.querySelector('footer');
+function generateAll(test) {
+  speakersContainer.innerHTML = '';
+  speakersList.every((speaker, index) => {
+    if (test === 1 && index === 2) {
+      speakersContainer.innerHTML += `
+    <button id="more-button" type="button" onClick="moreClicked(true)">MORE<i class="fa-solid fa-angle-down"></i></button>
+    `;
+      partners.style.display = 'none';
+      footer.style.display = 'none';
+      return false;
+    }
     speakersContainer.innerHTML += `
   <div class="speaker-container">
                             <div class ="speaker-image">
@@ -58,5 +68,31 @@ window.onload = () => {
                             </div>
     </div>
     `;
+    partners.style.display = 'block';
+    footer.style.display = 'block';
+    return !(test === 1 && index === 2);
   });
+}
+let moreClick = false;
+function moreClicked(test) {
+  if (test === true) {
+    generateAll(0);
+    moreClick = true;
+  }
+}
+window.onload = () => {
+  if (window.innerWidth >= 768) {
+    generateAll(0);
+  } else {
+    generateAll(1);
+  }
 };
+
+window.onresize = () => {
+  if (window.innerWidth >= 768) {
+    generateAll(0);
+  } else if (moreClick === false) {
+    generateAll(1);
+  }
+};
+moreClicked(false);

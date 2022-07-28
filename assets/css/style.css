@@ -276,6 +276,30 @@ h2:hover::after {
   margin-top: 15px;
 }
 
+#more-button {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0;
+  background-color: white;
+  border: solid 1px #d3d3d3;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+#more-button:hover,
+#more-button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #ec5242;
+  transform: translateY(-0.25em);
+  
+}
+
+.fa-angle-down {
+color:#ec5242;
+margin-left: 5px;
+}
+
 /* end of featured speakers section */
 
 /* partner section */
