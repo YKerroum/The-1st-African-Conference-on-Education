@@ -13,6 +13,7 @@
 
 nav {
   box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 2px 8px 0;
 }
 
 .nav-container {
@@ -25,7 +26,6 @@ nav {
 
 .navbar {
   width: 100%;
-  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
   position: relative;
 }
 

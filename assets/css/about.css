@@ -6,6 +6,11 @@ a.active {
   align-items: center;
 }
 
+#intro-container {
+  background: rgb(247, 247, 248) url("../images/about_bg_01.png") no-repeat scroll center center;
+  background-size: 100% 100%;
+}
+
 h1 {
   width: inherit;
   text-align: center;
@@ -113,6 +118,10 @@ h1 {
   font-size: 2em;
 }
 
+#partners {
+  display: block;
+}
+
 @media (min-width: 768px) {
   a.active {
     color: #ec5242 !important;
@@ -145,5 +154,17 @@ h1 {
 
   .cards {
     height: 288px;
+  }
+
+  #partners {
+    display: none;
+  }
+
+  footer {
+    background-color: #272a31;
+  }
+
+  #footer-container {
+    color: #d3d3d3;
   }
 }
